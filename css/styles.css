@@ -9,7 +9,7 @@
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-color);
-  background: var(--main-background);
+  background-color: var(--main-background);
 }
 
 h1,
@@ -285,6 +285,28 @@ img {
 
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+/*------------------------------Клієнти------------------------*/
+
+.clients-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.clients-list {
+ display:flex;
+ justify-content: space-between;
+}
+
+.clients-item {
+  width: 170px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
 }
 
 /*------------------------------Футер----------------------*/
