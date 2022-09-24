@@ -27,7 +27,8 @@ ul {
   padding: 0;
 }
 
-img {
+img, 
+svg {
   display: block;
 }
 
@@ -242,7 +243,7 @@ img {
 
 /*--------------------Розділ про команду---------------------*/
 .team {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 .team-tittle {
   font-size: 36px;
@@ -284,7 +285,30 @@ img {
   color: var(--second-color);
 
   margin-top: 10px;
-  margin-bottom: 30px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 16px 30px 32px 30px;
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  min-height: 44px;
+}
+
+.team-social-link:hover {
+  background-color: var(--accent-color);
+  border-radius: 50% 50%;
+}
+
+.team-social-link svg:hover {
+  fill: #ffffff;
 }
 
 /*------------------------------Клієнти------------------------*/
@@ -305,8 +329,12 @@ img {
 
 .clients-item {
   width: 170px;
+  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*------------------------------Футер----------------------*/
@@ -377,7 +405,7 @@ footer .tel-link {
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  background: #2196f3;
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 
